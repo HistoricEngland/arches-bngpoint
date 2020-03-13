@@ -1,5 +1,6 @@
 import uuid
 from arches.app.functions.base import BaseFunction
+from arches.app.models.system_settings import settings
 from arches.app.models import models
 from arches.app.models.tile import Tile
 from arches.app.models.resource import Resource
@@ -137,13 +138,13 @@ class BNGPointToGeoJSON(BaseFunction):
                         del new_geojson_tile.data[self.config[u"geojson_nodegroup"]]
 
                     new_geojson_tile.save()
-
-
-            cursor = connection.cursor()
+            
+            cursor = connection.cursor() 
             sql = """
                     REFRESH MATERIALIZED VIEW mv_geojson_geoms;
                 """
-            cursor.execute(sql)
+            cursor.execute(sql) #
+
         else:
             pass
 
