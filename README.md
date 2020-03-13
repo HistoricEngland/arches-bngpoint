@@ -1,7 +1,7 @@
 # arches-bngpoint
 Arches package containing the BNGPoint datatype, supporting widget and functions to sync with a geojson-feature-collection node node.
 
-Arches v4.4.1 and v5.0+ versions are available (although the v5 pkg structure is not full)
+Arches v4.4.1 and v5.0.0 versions are available (although the v5 pkg structure is not full)
 
 # Installation
 
