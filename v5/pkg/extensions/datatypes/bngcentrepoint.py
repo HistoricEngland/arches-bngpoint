@@ -20,7 +20,7 @@ details = {
 class BNGCentreDataType(BaseDataType):
 
 
-    def validate(self, value, row_number=None, source=None):
+    def validate(self, value, row_number=None, source=None, node=None, nodeid=None):
 
         errors = []
         gridSquareArray = ["NA","NB","NC","ND","NE","NF","NG","NH","NJ","NK","NL", "NM","NN","NO","NP","NR","NS","NT","NU","NV","NW","NX","NY","NZ","OA","OB","OF","OG","OL","OM","OQ","OR","OV","OW","SA","SB","SC","SD","SE","SF","SG","SH","SJ","SK","SL","SM","SN","SO","SP","SQ","SR","SS","ST","SU","SV","SW","SX","SY","SZ","TA","TB","TF","TG","TL","TM","TQ","TR","TV","TW"]
@@ -42,7 +42,7 @@ class BNGCentreDataType(BaseDataType):
 
 
 
-    def append_to_document(self, document, nodevalue, nodeid, tile):
+    def append_to_document(self, document, nodevalue, nodeid, tile, provisional=False):
 
         document['strings'].append({
             'string': nodevalue,
