@@ -189,8 +189,6 @@ class GeoJSONToBNGPoint(BaseFunction):
 
             return
 
-        # Save Tile to cement Parent Tile to subsequent bng_output_nodegroup.
-        # tile.save()
         return
 
     def save(self, tile, request):
