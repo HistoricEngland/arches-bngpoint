@@ -1,7 +1,7 @@
 # arches-bngpoint
 Arches package containing the BNGPoint datatype, supporting widget and functions to sync with a geojson-feature-collection node node.
 
-Arches v4.4.1 and v5.0.0 versions are available (although the v5 pkg structure is not full)
+Arches v4.4.1, v5.0.0 and v5.1.0 versions are available.  Please use the correct branch for the version you are loading the extensions into.
 
 # Installation
 
@@ -33,11 +33,11 @@ The BNG Widget is the default widget for the BNG datatype. They are linked in th
 
 The widget accepts a text value as the input in the following formats:
 
-* Alphanumeric BNG (deafult)
+* Alphanumeric BNG (default)
 * Absolute BNG
 * Long/Lat
 
-The format is selected from the drop down to ensure it is converted to a 12 figure alphanumeric grid reference correctly. 
+The format is selected from the drop down to ensure it is converted to a 12 figure alphanumeric grid reference correctly.
 
 The widget triggers the process of transforming data into a 12 character Alphanumeric BNG grid reference once focus is removed from the input textbox (i.e. when a user clicks outside the input textbox).
 
