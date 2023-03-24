@@ -202,7 +202,7 @@ class BNGPointToGeoJSON(BaseFunction):
 
             cursor = connection.cursor()
             sql = """
-                    REFRESH MATERIALIZED VIEW mv_geojson_geoms;
+                    SELECT * FROM refresh_geojson_geometries();
                 """
             cursor.execute(sql)  #
 
@@ -211,7 +211,7 @@ class BNGPointToGeoJSON(BaseFunction):
 
         return
 
-    def save(self, tile, request):
+    def save(self, tile, request, context=None):
 
         self.save_geojson(tile=tile, request=request, is_function_save_method=True)
         return
