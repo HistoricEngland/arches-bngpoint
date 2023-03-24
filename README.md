@@ -1,7 +1,7 @@
 # arches-bngpoint
 Arches package containing the BNGPoint datatype, supporting widget and functions to sync with a geojson-feature-collection node node.
 
-Arches v4.4.1 and v5.0.0 versions are available (although the v5 pkg structure is not full)
+Arches v4.4.1, v5.0.0 versions and v.6.2.x are available (the 6.2.x version should work on any 6.x installation)
 
 # Installation
 
@@ -20,6 +20,8 @@ python manage.py packages -o load_package -s /path/to/arches-bngpoint/pkg
 
 The BNG Datatype was written to contain a 12 figure alphanumeric grid reference representing the centre point location of a resource e.g. ***SU1234512345***. Details of this coordinate system can be found [here](https://en.wikipedia.org/wiki/Ordnance_Survey_National_Grid).
 
+BNG datatype values can be searched in Advanced Search but be aware that this is a text search.
+
 ### Validation
 
 The value must be 12 figures and zero padded if necessary e.g. ***TA123123*** must be padded to ***TA1230012300***. This is validated during a tile card.
@@ -37,7 +39,7 @@ The widget accepts a text value as the input in the following formats:
 * Absolute BNG
 * Long/Lat
 
-The format is selected from the drop down to ensure it is converted to a 12 figure alphanumeric grid reference correctly. 
+The format is selected from the drop down to ensure it is converted to a 12 figure alphanumeric grid reference correctly.
 
 The widget triggers the process of transforming data into a 12 character Alphanumeric BNG grid reference once focus is removed from the input textbox (i.e. when a user clicks outside the input textbox).
 
