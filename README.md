@@ -1,4 +1,7 @@
+**IMPORTANT: The arches-bngpoint repo has been depreciated and will no longer be actively supported.  For access to the extensions available in this repo and more, please use the he-arches-extensions repo which will be made public shortly.**
+
 # arches-bngpoint
+
 Arches package containing the BNGPoint datatype, supporting widget and functions to sync with a geojson-feature-collection node node.
 
 Arches v4.4.1 and v5.0.0 versions are available (although the v5 pkg structure is not full)
