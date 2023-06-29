@@ -1,4 +1,4 @@
-**IMPORTANT: The arches-bngpoint repo has been depreciated and will no longer be actively supported.  For access to the extensions available in this repo and more, please use the he-arches-extensions repo which will be made public shortly.**
+**IMPORTANT: The arches-bngpoint repo has been depreciated and will no longer be actively supported.  For access to the extensions available in this repo (from Arches version 6.1) and more, please use the he-arches-extensions repo which will be made public shortly.**
 
 # arches-bngpoint
 
